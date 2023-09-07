@@ -22,3 +22,45 @@ body {
     padding: 0 48px;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo {
+    padding: 30px 0;
+}
+
+nav,
+nav ul,
+nav ul li {
+    display: flex;
+
+
+}
+
+nav ul {
+    list-style: none;
+    gap: 64px;
+
+}
+.header-link {
+    align-items: flex-start;
+    border-top: 2px transparent solid;
+}
+
+.header-link:hover {
+    border-top: 2px #0065FC solid;
+}
+
+.header-link-item {
+    height: 100%;
+    padding-top: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header-link-item:hover {
+    color: #0065FC;   
+}
