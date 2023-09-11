@@ -32,39 +32,39 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </header>
-                <form class="search-info-bar" action="" method="post">
-                    <div class="search-bar-box">
+                <form action="#" method="post">
+                    <div class="search-bar">
                         <i class="fa-solid fa-location-dot"></i>
-                        <input type="search" placeholder="Marseille, France">
-                        <button class="search-bar-button"><span>Rechercher</span> <i
-                                class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="search">
+                        <button class="search-bar-button"><span>Rechercher</span>
+                            <i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </form>
                 <div class="filter-info-bar">
                     <h2>Filtres</h2>
-                    <div class="filter-info-bar-box">
-                        <div class="filter-info-bar-item">
+                    <div class="filter-item-container">
+                        <div class="filter-item">
                             <i class="fa-solid fa-money-bill-wave"></i>
                             <div>
                                 <input type="radio" id="economic-accommodation">
                                 <label for="economic-accommodation">Économique</label>
                             </div>
                         </div>
-                        <div class="filter-info-bar-item">
+                        <div class="filter-item">
                             <i class="fa-solid fa-person"></i>
                             <div>
                                 <input type="radio" id="family-accommodation">
                                 <label for="family-accommodation">Familial</label>
                             </div>
                         </div>
-                        <div class="filter-info-bar-item">
+                        <div class="filter-item">
                             <i class="fa-solid fa-heart"></i>
                             <div>
                                 <input type="radio" id="romantic-accommodation">
                                 <label for="romantic-accommodation">Romantique</label>
                             </div>
                         </div>
-                        <div class="filter-info-bar-item">
+                        <div class="filter-item">
                             <i class="fa-solid fa-fire"></i>
                             <div>
                                 <input type="radio" id="premium-accommodation">
@@ -74,248 +74,269 @@
                     </div>
                 </div>
                 <div class="info-bar">
-                    <div class="info-bar-icon">
-                        <i class="fa-solid fa-info"></i>
-
-                    </div>
+                    <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
+
             <div class="offers">
-                <section class="offers-accommodation" id="accommodation-link">
-                    <header class="offers-accommodation-header">
+                <section class="offers-accommodation-container" id="accommodation-link">
+                    <header>
                         <h1>Hébergements à Marseille</h1>
-                        <i></i>
                     </header>
-                    <div class="card-box">
-                        <a href="#" class="card-link">
-                            <article class="card offers-accommodation-card">
-                                <figure class="card-image">
-                                    <img src="/pictures/accommodation/hotel-du-port.jpg"
-                                        alt="Photo d'une chambre de l'Hôtel du Port à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'Hôtel du Port à Marseille"
-                                        height="124px">
-                                </figure>
+                    <div class="offers-accommodation">
+                        <article class="card-accommodation card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
 
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Hôtel du port</h3>
-                                        <p>Nuit à partir de 52€</p>
-                                    </header>
+                                    <div class="card-img">
+                                        <img src="/pictures/accommodation/hotel-du-port.jpg"
+                                            alt="Photo d'une chambre de l'Hôtel du Port à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'Hôtel du Port à Marseille">
+                                    </div>
 
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                    <div class="card-content">
+                                        <header>
+
+                                            <h3>Hôtel du port</h3>
+                                            <p>Nuit à partir de 52€</p>
+
+                                        </header>
+
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
-                        <a href="#" class="card-link">
-                            <article class="card offers-accommodation-card">
-                                <figure class="card-image">
-                                    <img src="/pictures/accommodation/hotel-chez-amina.jpg"
-                                        alt="Photo d'une chambre de l'Hôtel Chez Amina à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'Hôtel Chez Amina à Marseille"
-                                        height="124px">
-                                </figure>
+                            </a>
+                        </article>
 
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Hôtel Chez Amina</h3>
-                                        <p>Nuit à partir de 96€</p>
-                                    </header>
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                        <article class="card-accommodation card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
+
+                                    <div class="card-img">
+                                        <img src="/pictures/accommodation/hotel-chez-amina.jpg"
+                                            alt="Photo d'une chambre de l'Hôtel Chez Amina à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'Hôtel Chez Amina à Marseille">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <header>
+                                            <h3>Hôtel Chez Amina</h3>
+                                            <p>Nuit à partir de 96€</p>
+                                        </header>
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
-                        <a href="#" class="card-link">
-                            <article class="card offers-accommodation-card">
-                                <figure class="card-image">
+                            </a>
+                        </article>
+                        <article class="card-accommodation card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
 
-                                    <img src="/pictures/accommodation/hotel-les-mouettes.jpg"
-                                        alt="Photo d'une chambre de l'Hôtel Les mouettes à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'Hôtel Les mouettes à Marseille"
-                                        height="124px">
-                                </figure>
+                                    <div class="card-img">
 
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Hôtel Les mouettes</h3>
-                                        <p>Nuit à partir de 76€</p>
-                                    </header>
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <img src="/pictures/accommodation/hotel-les-mouettes.jpg"
+                                            alt="Photo d'une chambre de l'Hôtel Les mouettes à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'Hôtel Les mouettes à Marseille">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <header>
+                                            <h3>Hôtel Les mouettes</h3>
+                                            <p>Nuit à partir de 76€</p>
+                                        </header>
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
-                        <a href="#" class="card-link">
-                            <article class="card offers-accommodation-card">
-                                <figure class="card-image">
+                            </a>
+                        </article>
+                        <article class="card-accommodation card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
 
-                                    <img src="/pictures/accommodation/hotel-de-la-mer.jpg"
-                                        alt="Photo d'une chambre de l'Hôtel de la mer à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'Hôtel de la mer à Marseille"
-                                        height="124px">
-                                </figure>
+                                    <div class="card-img">
 
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Hôtel de la mer</h3>
-                                        <p>Nuit à partir de 46€</p>
-                                    </header>
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <img src="/pictures/accommodation/hotel-de-la-mer.jpg"
+                                            alt="Photo d'une chambre de l'Hôtel de la mer à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'Hôtel de la mer à Marseille">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <header>
+                                            <h3>Hôtel de la mer</h3>
+                                            <p>Nuit à partir de 46€</p>
+                                        </header>
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
-                        <a href="#" class="card-link">
-                            <article class="card offers-accommodation-card">
-                                <figure class="card-image">
+                            </a>
+                        </article>
+                        <article class="card-accommodation card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
 
-                                    <img src="/pictures/accommodation/auberge-la-canebiere.jpg"
-                                        alt="Photo d'une chambre de l'Auberge La Canebière à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'Auberge La Canebière à Marseille"
-                                        height="124px">
-                                </figure>
+                                    <div class="card-img">
 
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Auberge La Canebière</h3>
-                                        <p>Nuit à partir de 25€</p>
-                                    </header>
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                        <img src="/pictures/accommodation/auberge-la-canebiere.jpg"
+                                            alt="Photo d'une chambre de l'Auberge La Canebière à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'Auberge La Canebière à Marseille">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <header>
+                                            <h3>Auberge La Canebière</h3>
+                                            <p>Nuit à partir de 25€</p>
+                                        </header>
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
-                        <a href="#" class="card-link">
-                            <article class="card offers-accommodation-card">
-                                <figure class="card-image">
+                            </a>
+                        </article>
+                        <article class="card-accommodation card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
 
-                                    <img src="/pictures/accommodation/auberge-le-panier.jpg"
-                                        alt="Photo d'une chambre de l'Auberge Le Panier à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'Auberge Le Panier à Marseille"
-                                        height="124px">
-                                </figure>
+                                    <div class="card-img">
+                                        <img src="/pictures/accommodation/auberge-le-panier.jpg"
+                                            alt="Photo d'une chambre de l'Auberge Le Panier à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'Auberge Le Panier à Marseille">
+                                    </div>
 
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Auberge Le Panier</h3>
-                                        <p>Nuit à partir de 23€</p>
-                                    </header>
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                    <div class="card-content">
+                                        <header>
+                                            <h3>Auberge Le Panier</h3>
+                                            <p>Nuit à partir de 23€</p>
+                                        </header>
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
-                        <button class="more-button" type="submit">Afficher plus</button>
+                            </a>
+                        </article>
+                    </div>
+                    <button class="more-btn" type="submit">Afficher plus</button>
                 </section>
 
-                <section class="offers-sponsorised">
+                <section class="offers-sponsorised-container">
                     <header class="offers-sponsorised-header">
                         <h1>Les plus populaires</h1>
-                        <i></i>
+                        <i class="fa-solid fa-chart-line"></i>
                     </header>
-                    <div class="card-box">
-                        <a href="#" class="card-link">
-                            <article class="card offers-sponsorised-card">
-                                <figure>
-                                    <img src="/pictures/accommodation/hotel-le-soleil-du-matin.jpg"
-                                        alt="Photo d'une chambre de l'Hôtel Le soleil du matin à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'Hôtel Le soleil du matin à Marseille"
-                                        width="123px" height="144px">
-                                </figure>
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Hôtel Le soleil du matin</h3>
-                                        <p>Nuit à partir de 128€</p>
-                                    </header>
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+
+                    <div class="offers-sponsorised">
+
+                        <article class="card-sponsorised card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
+                                    <div class="card-img">
+                                        <img src="/pictures/accommodation/hotel-le-soleil-du-matin.jpg"
+                                            alt="Photo d'une chambre de l'Hôtel Le soleil du matin à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'Hôtel Le soleil du matin à Marseille">
+                                    </div>
+
+                                    <div class="card-content">
+                                        <header>
+                                            <h3>Hôtel Le soleil du matin</h3>
+                                            <p>Nuit à partir de 128€</p>
+                                        </header>
+
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
-                        <a href="#" class="card-link">
-                            <article class="card offers-sponsorised-card">
-                                <figure>
-                                    <img src="/pictures/accommodation/chambres-d-hotes-au-coeur-de-l-eau.jpg"
-                                        alt="Photo d'une chambre d’hôtes de l'établissement Au cœur de l’eau à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'établissement Au cœur de l’eau à Marseille"
-                                        width="123px" height="144px">
-                                </figure>
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Chambres d’hôtes Au cœur de l’eau</h3>
-                                        <p>Nuit à partir de 71€</p>
-                                    </header>
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                            </a>
+                        </article>
+                        <article class="card-sponsorised card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
+                                    <div class="card-img">
+                                        <img src="/pictures/accommodation/chambres-d-hotes-au-coeur-de-l-eau.jpg"
+                                            alt="Photo d'une chambre d’hôtes de l'établissement Au cœur de l’eau à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'établissement Au cœur de l’eau à Marseille">
+                                    </div>
+                                    <div class="card-content">
+                                        <header>
+                                            <h3>Chambres d’hôtes Au cœur de l’eau</h3>
+                                            <p>Nuit à partir de 71€</p>
+                                        </header>
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
-                        <a href="#" class="card-link">
-                            <article class="card offers-sponsorised-card">
-                                <figure>
-                                    <img src="/pictures/accommodation/hotel-bleu-et-blanc.jpg"
-                                        alt="Photo d'une chambre de l'Hôtel Bleu et Blanc à Marseille"
-                                        title="Vue de l'intérieur d'une chambre de l'Hôtel Bleu et Blanc à Marseille"
-                                        width="123px" height="144px">
-                                </figure>
-                                <div class="card-content">
-                                    <header class="card-header">
-                                        <h3>Hôtel Bleu et Blanc</h3>
-                                        <p>Nuit à partir de 68€</p>
-                                    </header>
-                                    <div class="card-icons">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                            </a>
+                        </article>
+                        <article class="card-sponsorised card">
+                            <a href="#" class="card-link">
+                                <div class="card-body">
+                                    <div class="card-img">
+                                        <img src="/pictures/accommodation/hotel-bleu-et-blanc.jpg"
+                                            alt="Photo d'une chambre de l'Hôtel Bleu et Blanc à Marseille"
+                                            title="Vue de l'intérieur d'une chambre de l'Hôtel Bleu et Blanc à Marseille">
+
+                                    </div>
+                                    <div class="card-content">
+                                        <header>
+                                            <h3>Hôtel Bleu et Blanc</h3>
+                                            <p>Nuit à partir de 68€</p>
+                                        </header>
+                                        <div class="card-icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </a>
+                            </a>
+                        </article>
                     </div>
+
                 </section>
             </div>
             <section class="activities" id="activities-link">
@@ -323,48 +344,48 @@
                     <h1>Activités à Marseille</h1>
                 </header>
                 <div>
-                    <a href="#" class="card-link">
-                        <article class="card activities-card">
-                            <figure><img src="/pictures/activities/vieux-port-marseille.jpg"
+                    <article class="card activities-card">
+                        <a href="#" class="card-link">
+                            <div><img src="/pictures/activities/vieux-port-marseille.jpg"
                                     alt="Photo du Vieux-Port de Marseille" title="Vue du Vieux-Port de Marseille"
                                     height="380px">
-                            </figure>
+                            </div>
                             <header>
                                 <h3>Vieux-Port</h3>
                             </header>
-                        </article>
-                    </a>
-                    <a href="#" class="card-link">
-                        <article class="card activities-card">
-                            <figure><img src="/pictures/activities/fort-de-pomegues.jpg" alt="Photo du Fort de Pomègues"
+                        </a>
+                    </article>
+                    <article class="card activities-card">
+                        <a href="#" class="card-link">
+                            <div><img src="/pictures/activities/fort-de-pomegues.jpg" alt="Photo du Fort de Pomègues"
                                     title="Vue de l'extérieur du Fort de Pomègues" height="380px">
-                            </figure>
-                            <header class="card-header">
+                            </div>
+                            <header>
                                 <h3>Fort de Pomègues</h3>
                             </header>
-                        </article>
-                    </a>
-                    <a href="#" class="card-link">
-                        <article class="card activities-card">
-                            <figure><img src="/pictures/activities/parc-national-des-calanques.jpg"
+                        </a>
+                    </article>
+                    <article class="card activities-card">
+                        <a href="#" class="card-link">
+                            <div><img src="/pictures/activities/parc-national-des-calanques.jpg"
                                     alt="Photo d'une calanque du Parc national des Calanques"
-                                    title="Vue d'une calanque du Parc national des Calanques" height="380px"></figure>
-                            <header class="card-header">
+                                    title="Vue d'une calanque du Parc national des Calanques" height="380px"></div>
+                            <header>
                                 <h3>Parc national des Calanques</h3>
                             </header>
-                        </article>
-                    </a>
-                    <a href="#" class="card-link">
-                        <article class="card activities-card">
-                            <figure><img src="/pictures/activities/notre-dame-de-la-garde-marseille.jpg"
+                        </a>
+                    </article>
+                    <article class="card activities-card">
+                        <a href="#" class="card-link">
+                            <div><img src="/pictures/activities/notre-dame-de-la-garde-marseille.jpg"
                                     alt="Photo de la basilique Notre-Dame-de-la-Garde à Marseille"
                                     title="Vue éloignée de l'extérieur de la basilique Notre-Dame-de-la-Garde à Marseille"
-                                    height="380px"></figure>
-                            <header class="card-header">
+                                    height="380px"></div>
+                            <header>
                                 <h3>Notre-Dame-de-la-Garde</h3>
                             </header>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
                 </div>
             </section>
         </main>
