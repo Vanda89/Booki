@@ -12,7 +12,7 @@
 /* Generic styles*/
 * {
     scroll-behavior: smooth;
-
+    box-sizing: border-box;
 }
 
 html {
@@ -23,29 +23,24 @@ body {
     display: flex;
     justify-content: center;
     padding: 0 50px;
-    overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     color: var(--base--color);
+    overflow-x: hidden;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
-    gap: 35px;
     max-width: 1440px;
-    box-sizing: border-box;
     width: 100%;
+    gap: 35px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     gap: 35px;
-}
-
-section {
-    box-sizing: border-box;
 }
 
 h1,
@@ -63,15 +58,13 @@ nav ul li {
 }
 
 ul {
-    list-style: none;
     gap: 68px;
     padding: 0;
-
+    list-style: none;
 }
 
 h1 {
     font-size: 1.375rem;
-
 }
 
 h2 {
@@ -87,8 +80,8 @@ p {
 }
 
 a {
-    text-decoration: none;
     color: #000;
+    text-decoration: none;
 }
 
 .fa-solid {
@@ -100,7 +93,6 @@ a {
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
-
 
 .card-body {
     display: flex;
@@ -117,7 +109,10 @@ a {
     flex-direction: column;
 }
 
-
+.cursor,
+.cursor * {
+    cursor: pointer;
+}
 
 /* Header */
 .main-header {
@@ -128,7 +123,6 @@ a {
 
 .logo {
     width: 61.09px;
-    height: 19px;
     padding: 30px 0;
 }
 
@@ -138,16 +132,17 @@ a {
 
 .header-link {
     border-top: 2px transparent solid;
+    transition: 0.2s;
 }
 
 .header-link:hover {
     border-top: 2px var(--main-color) solid;
+    transition: 0.2s;
 }
 
 .header-link-item {
     height: 100%;
     padding-top: 16px;
-
 }
 
 .header-link-item:hover {
@@ -167,15 +162,17 @@ a {
     gap: 8px;
 }
 
+.info-group p {
+    font-size: 1rem;
+}
 
 /*Search bar*/
 .search-bar {
     display: flex;
     align-items: center;
-    width: 377px;
     height: 49px;
+    width: 377px;
     overflow: hidden;
-
 }
 
 .search-bar * {
@@ -184,12 +181,12 @@ a {
 }
 
 .fa-location-dot {
-    color: #000;
     background-color: var(--secondary-bg-color);
     border: 1px solid var(--secondary-bg-color);
     border-right: none;
     border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px
+    border-bottom-left-radius: 16px;
+    color: #000;
 }
 
 .search-bar input {
@@ -210,17 +207,22 @@ a {
     font-size: 18px;
 }
 
+.search-bar input::-moz-placeholder {
+    color: var(--base--color);
+    font-size: 18px;
+}
+
 .search-bar-button {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 132px;
+    justify-content: center;
     height: 100%;
-    color: var(--main-bg-color);
+    width: 132px;
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
+    color: var(--main-bg-color);
 }
 
 .search-bar-button i {
@@ -236,22 +238,23 @@ a {
 
 .filter-item-container {
     display: flex;
-    gap: 15px;
     justify-content: center;
+    gap: 15px;
 }
 
 .filter-item {
     display: flex;
     align-items: center;
-
     gap: 10px;
     padding: 15px 19px;
     border: 2px solid var(--anonymous-color);
     border-radius: 25px;
+    transition: 0.3s;
 }
 
 .filter-item:hover {
     background-color: var(--filter-bg-color);
+    transition: 0.3s;
 }
 
 .filter-item i:before {
@@ -288,25 +291,19 @@ a {
     font-size: 0.625rem;
 }
 
-.info-bar p {
-    font-size: 1rem;
-}
-
 /*Offers*/
 .offers-container {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
     width: 100%;
-
+    gap: 40px;
 }
 
 .offers-container section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15px;
     padding: 30px;
+    border-radius: 15px;
 }
 
 .offers {
@@ -314,13 +311,12 @@ a {
     gap: 30px;
 }
 
-
-.card-content {
+.offers .card-content {
     display: flex;
     flex-direction: column;
 }
 
-.card-icons {
+.offers .card-icons {
     display: flex;
     gap: 1px;
 }
@@ -333,10 +329,9 @@ a {
     font-size: 0.875rem;
 }
 
-
 /*Accomodation Offers*/
 .accommodation-offers-container {
-    width: 65%;
+    flex: 2.5;
     gap: 30px;
     background-color: var(--secondary-bg-color);
 }
@@ -347,9 +342,8 @@ a {
 }
 
 .accommodation-card {
-    width: 30%;
+    flex: 1 0 calc(33.33% - 30px);
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-
 }
 
 .accommodation-card .card-link {
@@ -359,8 +353,8 @@ a {
 
 .accommodation-card .card-body {
     flex-direction: column;
-    margin-bottom: 15px;
     gap: 4px;
+    margin-bottom: 15px;
 }
 
 .accommodation-card .card-img {
@@ -371,13 +365,11 @@ a {
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
 }
 
 .accommodation-card .card-content {
-    padding: 0 15px;
     gap: 8px;
-
+    padding: 0 15px;
 }
 
 .accommodation-card .card-header {
@@ -386,16 +378,15 @@ a {
 
 /*Button more*/
 .more-btn {
+    align-self: flex-start;
     font-weight: 700;
     border: none;
-    align-self: flex-start;
-    cursor: pointer;
 }
-
 
 /*Sponsored Offers*/
 .sponsored-offers-container {
-    width: 30%;
+    flex: 1;
+    height: fit-content;
     gap: 30px;
     background-color: var(--secondary-bg-color);
 }
@@ -413,20 +404,19 @@ a {
 .sponsored-card {
     padding: 5px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-
 }
 
 .sponsored-card .card-img {
-    width: 35%;
     height: 146px;
+    width: 35%;
 }
 
 .sponsored-card img {
+    object-fit: cover;
     height: 146px;
     width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .sponsored-card .card-content {
@@ -438,9 +428,6 @@ a {
 .sponsored-card .card-header {
     gap: 5px;
 }
-
-
-
 
 /*Activities section*/
 .activities-container {
@@ -454,34 +441,30 @@ a {
 
 .activities {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
 }
 
 .activities-card {
-
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    width: 25%;
+    flex: 0 0 calc(25% - 30px);
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10)
 }
 
-
 .activities-card img {
-    object-fit: cover;
     height: 380px;
-    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .activities-card .card-header {
-    padding: 20px 19px;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
+    padding: 20px 19px;
 }
 
 /*Footer*/
 footer {
     display: flex;
-    justify-content: space-between;
     height: 163px;
     background-color: var(--secondary-bg-color);
 }
@@ -489,22 +472,20 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 15px;
+    flex: 1 1 0;
     height: 123px;
-
+    gap: 15px;
+    padding: 20px;
 }
 
-
-.footer-links-container li {
-    margin-bottom: 15px;
-
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
 }
-
-
 
 @media screen and (max-width: 1024px) {
-
     .logo-sm {
         display: none;
     }
@@ -531,20 +512,12 @@ footer {
         flex-direction: column;
         align-items: center;
         align-self: center;
-
         gap: 50px;
     }
 
     .offers-container section {
         width: 100%;
-
     }
-
-    .offers {
-        justify-content: space-between;
-    }
-
-    .accommodation-offers-container {}
 
     .sponsored-offers-container {
         gap: 20px;
@@ -556,16 +529,12 @@ footer {
     }
 
     .sponsored-card {
-        width: 31%;
-        height: 146px;
-
+        flex: 1 0 calc(33.33% - 30px);
     }
 
     .sponsored-card .card-content {
         padding: 10px 5px 5px 15px;
-
     }
-
 
     .activities-card img {
         height: 200px;
@@ -573,15 +542,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
     body {
-
         padding: 0;
     }
 
     main {
-        gap: 45px;
         align-items: center;
+        gap: 45px;
     }
 
     .main-header {
@@ -599,12 +566,11 @@ footer {
         gap: 0;
     }
 
-
     .header-link {
         justify-content: center;
         width: 100%;
-        border-top: 0;
         border-bottom: 2px var(--secondary-bg-color) solid;
+        border-top: 0;
     }
 
     .header-link:hover {
@@ -612,14 +578,14 @@ footer {
     }
 
     .header-link:active {
-        border-top: 0;
         border-bottom: 2px var(--main-color) solid;
+        border-top: 0;
     }
 
     .header-link-item {
         height: 100%;
         padding-bottom: 16px;
-
+        padding-top: 0;
     }
 
     .header-link-item:hover {
@@ -631,16 +597,13 @@ footer {
     }
 
     .info-group {
-
         width: 100%;
         padding: 0 30px;
-
     }
 
     .search-bar {
         border: 1px solid var(--secondary-bg-color);
         border-radius: 16px;
-
     }
 
     .search-bar * {
@@ -651,13 +614,11 @@ footer {
         padding-right: 0px;
     }
 
-
     .search-bar-button {
-
         width: 49px;
-        border-radius: 15px;
-        border: 1px solid var(--Blue, #0065FC);
         background: var(--Blue, #0065FC);
+        border: 1px solid var(--Blue, #0065FC);
+        border-radius: 15px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
@@ -669,19 +630,18 @@ footer {
         display: block;
     }
 
-
     .fa-magnifying-glass {
         color: var(--main-bg-color);
     }
 
     .filter-item-container {
         flex-wrap: wrap;
-        width: 100%;
         justify-content: normal;
+        width: 100%;
     }
 
     .filter-item {
-        width: 115px;
+        width: 150px;
     }
 
     .filter-item label {
@@ -707,15 +667,6 @@ footer {
     .accommodation-offers {
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 35px;
-    }
-
-    .accommodation-card {
-        width: 47%;
-    }
-
-    .activities-card img {
-        height: 143px;
     }
 
     .more-btn {
@@ -727,26 +678,16 @@ footer {
     }
 
     .sponsored-offers {
-        flex-wrap: wrap;
-        gap: 30px;
-        width: 100%;
+        flex-direction: column;
         justify-content: center;
-
-
+        gap: 30px;
     }
 
     .sponsored-card {
-        width: 70%;
-        height: 146px;
-
+        flex: none;
+        align-self: center;
+        width: 60%;
     }
-
-    .sponsored-card .card-body {
-        gap: 20px;
-    }
-
-    .sponsored-card .card-img {}
-
 
     .activities-container {
         gap: 40px;
@@ -759,33 +700,31 @@ footer {
     }
 
     .activities-card {
-        width: 47%;
+        flex: 0 0 calc(50% - 20px);
     }
 
+    .activities-card img {
+        height: 143px;
+    }
 
     footer {
-        box-sizing: border-box;
-        width: 100%;
         height: 100%;
+        width: 100%;
         padding: 0 30px;
     }
 
     .footer-container {
-        width: 30%;
         height: 163px;
     }
-
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
-
-
     .main-container {
         gap: 35px;
     }
 
     main {
+        gap: 35px;
         padding: 0;
     }
 
@@ -798,23 +737,22 @@ footer {
     }
 
     .filter-info-bar {
-
         flex-direction: column;
         align-items: flex-start;
     }
 
-
     .filter-item-container {
-        gap: 10px;
-        width: 100%;
         justify-content: center;
+        gap: 10px;
     }
 
     .filter-item {
         margin-bottom: 10px;
-        width: 115px;
     }
 
+    .info-bar p {
+        width: 100%;
+    }
 
     .offers-container {
         gap: 15px;
@@ -825,13 +763,9 @@ footer {
         border-radius: 0;
     }
 
-    .card {
-        width: 100%;
-    }
-
     .accommodation-offers-container {
-        background-color: var(--main-bg-color);
         gap: 15px;
+        background-color: var(--main-bg-color);
     }
 
     .accommodation-offers {
@@ -839,13 +773,21 @@ footer {
         gap: 15px;
     }
 
+    .accommodation-card {
+        flex: none;
+    }
+
     .sponsored-offers-container {
-        padding: 30px 20px !important;
         gap: 15px;
+        padding: 30px 20px !important;
     }
 
     .sponsored-offers {
         gap: 15px;
+    }
+
+    .sponsored-card {
+        width: 100%;
     }
 
     .sponsored-card .card-body {
@@ -857,24 +799,37 @@ footer {
     }
 
     .activities-container {
-        gap: 30px;
         width: 100%;
+        gap: 30px;
     }
 
     .activities {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .activities-card {
+        flex: none;
     }
 
     footer {
-
         flex-direction: column;
         height: 100%;
-        padding: 0 30px;
+        gap: 50px;
+        padding: 30px 30px;
     }
-
 
     .footer-container {
+        height: auto;
         width: 100%;
+        padding: 0;
     }
 
+    .footer-links-container {
+        gap: 15px;
+    }
+
+    .footer-links-container li {
+        margin: 0;
+    }
 }
