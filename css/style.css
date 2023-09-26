@@ -1,15 +1,22 @@
+/* Import fonts style */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+/* Colors variables declaration */
 :root {
     --main-color: #0065FC;
     --filter-bg-color: #DEEBFF;
     --main-bg-color: #FFF;
     --secondary-bg-color: #F2F2F2;
-    --anonymous-color: #D9D9D9;
+    --border-color: #D9D9D9;
     --base--color: #000;
 }
 
-/* Generic styles*/
+
+/*********************************************************\
+                   |                      Generic styles                       |
+                    \*********************************************************/
+
+
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -114,7 +121,12 @@ a {
     cursor: pointer;
 }
 
-/* Header */
+
+/*************************************************\
+                   |                      Header                       |
+                    \*************************************************/
+
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -149,8 +161,14 @@ a {
     color: var(--main-color);
 }
 
-/*Section Info Group*/
+
+/******************************************************\
+                   |                      Info Group                        |
+                    \******************************************************/
+
+
 /*Header*/
+
 .info-group,
 .info-group-header {
     display: flex;
@@ -166,7 +184,9 @@ a {
     font-size: 1rem;
 }
 
+
 /*Search bar*/
+
 .search-bar {
     display: flex;
     align-items: center;
@@ -208,7 +228,7 @@ a {
 }
 
 .search-bar input::-moz-placeholder {
-    color: var(--base--color);
+    color: var(--base--color) !important;
     font-size: 18px;
 }
 
@@ -229,7 +249,9 @@ a {
     display: none;
 }
 
+
 /*Filter bar*/
+
 .filter-info-bar {
     display: flex;
     align-items: center;
@@ -247,7 +269,7 @@ a {
     align-items: center;
     gap: 10px;
     padding: 15px 19px;
-    border: 2px solid var(--anonymous-color);
+    border: 2px solid var(--border-color);
     border-radius: 25px;
     transition: 0.3s;
 }
@@ -270,7 +292,9 @@ a {
     font-weight: 700;
 }
 
+
 /*Info bar*/
+
 .info-bar {
     display: flex;
     align-items: center;
@@ -283,7 +307,7 @@ a {
     justify-content: center;
     height: 24px;
     width: 24px;
-    border: 1px solid var(--anonymous-color);
+    border: 1px solid var(--border-color);
     border-radius: 50%;
 }
 
@@ -291,7 +315,12 @@ a {
     font-size: 0.625rem;
 }
 
-/*Offers*/
+
+/*************************************************\
+                   |                      Offers                       |
+                    \*************************************************/
+
+
 .offers-container {
     display: flex;
     justify-content: space-between;
@@ -329,7 +358,12 @@ a {
     font-size: 0.875rem;
 }
 
-/*Accomodation Offers*/
+
+/**************************************************************\
+                   |                      Accomodation Offers                       |
+                    \**************************************************************/
+
+
 .accommodation-offers-container {
     flex: 2.5;
     gap: 30px;
@@ -376,14 +410,21 @@ a {
     gap: 8px;
 }
 
+
 /*Button more*/
+
 .more-btn {
     align-self: flex-start;
     font-weight: 700;
     border: none;
 }
 
-/*Sponsored Offers*/
+
+/**********************************************************\
+                   |                      Sponsored Offers                      |
+                    \**********************************************************/
+
+
 .sponsored-offers-container {
     flex: 1;
     height: fit-content;
@@ -429,15 +470,18 @@ a {
     gap: 5px;
 }
 
-/*Activities section*/
+
+/************************************************************\
+                   |                      Activities Offers                       |
+                    \************************************************************/
+
+
 .activities-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 30px;
 }
-
-.activities-header {}
 
 .activities {
     display: flex;
@@ -462,7 +506,12 @@ a {
     padding: 20px 19px;
 }
 
-/*Footer*/
+
+/*************************************************\
+                   |                      Footer                       |
+                    \*************************************************/
+
+
 footer {
     display: flex;
     height: 163px;
@@ -484,6 +533,14 @@ footer {
     align-items: flex-start;
     gap: 15px;
 }
+
+
+/********************************************************\
+                   |                      Media-queries                       |
+                    \********************************************************/
+
+
+/********************Laptop********************/
 
 @media screen and (max-width: 1024px) {
     .logo-sm {
@@ -540,6 +597,9 @@ footer {
         height: 200px;
     }
 }
+
+
+/********************Tablet********************/
 
 @media screen and (max-width: 768px) {
     body {
@@ -717,6 +777,9 @@ footer {
         height: 163px;
     }
 }
+
+
+/*******************Smartphone********************/
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
     .main-container {
