@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-// Colors variables declaration
-:root {
-	--main-color: #0065fc;
-	--filter-bg-color: #deebff;
-	--main-bg-color: #fff;
-	--secondary-bg-color: #f2f2f2;
-	--border-color: #d9d9d9;
-	--base--color: #000;
-}
-
-// Generic styles
-
+/* Generic styles*/
 * {
 	scroll-behavior: smooth;
 	box-sizing: border-box;
@@ -25,9 +14,10 @@ body {
 	display: flex;
 	justify-content: center;
 	padding: 0 50px;
+	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1rem;
-	color: var(--base--color);
+	color: #000;
 	overflow-x: hidden;
 }
 
@@ -87,11 +77,11 @@ a {
 }
 
 .fa-solid {
-	color: var(--main-color);
+	color: #0065fc;
 }
 
 .card {
-	background-color: var(--main-bg-color);
+	background-color: #fff;
 	border-radius: 20px;
 	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
@@ -113,7 +103,7 @@ a {
 
 .cursor,
 .cursor * {
-	cursor: pointer;
+	cursor: focus;
 }
 
 .main-header {
@@ -137,17 +127,18 @@ a {
 }
 
 .header-link:hover {
-	border-top: 2px var(--main-color) solid;
+	border-top: 2px #0065fc solid;
 	transition: 0.2s;
+	color: #eee;
 }
 
 .header-link-item {
 	height: 100%;
-	padding-top: 16px;
+	padding-top: 18px;
 }
 
 .header-link-item:hover {
-	color: var(--main-color);
+	color: #0065fc;
 }
 
 .info-group,
@@ -179,8 +170,8 @@ a {
 }
 
 .fa-location-dot {
-	background-color: var(--secondary-bg-color);
-	border: 1px solid var(--secondary-bg-color);
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
 	border-right: none;
 	border-top-left-radius: 16px;
 	border-bottom-left-radius: 16px;
@@ -188,7 +179,7 @@ a {
 }
 
 .search-bar input {
-	border: 1px solid var(--secondary-bg-color);
+	border: 1px solid #f2f2f2;
 	border-left: none;
 	border-right: none;
 	border-radius: unset;
@@ -201,12 +192,12 @@ a {
 }
 
 .search-bar input::placeholder {
-	color: var(--base--color);
+	color: #000;
 	font-size: 18px;
 }
 
 .search-bar input::-moz-placeholder {
-	color: var(--base--color) !important;
+	color: #000 !important;
 	font-size: 18px;
 }
 
@@ -216,11 +207,12 @@ a {
 	justify-content: center;
 	height: 100%;
 	width: 132px;
-	background-color: var(--main-color);
-	border: 1px solid var(--main-color);
+	font-size: 18px;
+	background-color: #0065fc;
+	border: 1px solid #0065fc;
 	border-top-right-radius: 16px;
 	border-bottom-right-radius: 16px;
-	color: var(--main-bg-color);
+	color: #fff;
 }
 
 .search-bar-button i {
@@ -244,13 +236,13 @@ a {
 	align-items: center;
 	gap: 10px;
 	padding: 15px 19px;
-	border: 2px solid var(--border-color);
+	border: 2px solid #d9d9d9;
 	border-radius: 25px;
 	transition: 0.3s;
 }
 
 .filter-item:hover {
-	background-color: var(--filter-bg-color);
+	background-color: #deebff;
 	transition: 0.3s;
 }
 
@@ -263,7 +255,7 @@ a {
 }
 
 .filter-item label {
-	font-size: 1.063rem;
+	font-size: 18px;
 	font-weight: 700;
 }
 
@@ -279,7 +271,7 @@ a {
 	justify-content: center;
 	height: 24px;
 	width: 24px;
-	border: 1px solid var(--border-color);
+	border: 1px solid #d9d9d9;
 	border-radius: 50%;
 }
 
@@ -317,7 +309,7 @@ a {
 }
 
 .fa-star:last-child {
-	color: var(--secondary-bg-color);
+	color: #f2f2f2;
 }
 
 .fa-star:before {
@@ -327,7 +319,7 @@ a {
 .accommodation-offers-container {
 	flex: 2.5;
 	gap: 30px;
-	background-color: var(--secondary-bg-color);
+	background-color: #f2f2f2;
 }
 
 .accommodation-offers {
@@ -341,7 +333,7 @@ a {
 }
 
 .accommodation-card .card-link {
-	color: var(--base--color);
+	color: #000;
 	text-decoration: none;
 }
 
@@ -376,13 +368,14 @@ a {
 	align-self: flex-start;
 	font-weight: 700;
 	border: none;
+	font-size: 17px;
 }
 
 .sponsored-offers-container {
 	flex: 1;
 	height: fit-content;
 	gap: 30px;
-	background-color: var(--secondary-bg-color);
+	background-color: #f2f2f2;
 }
 
 .sponsored-offers-header {
@@ -456,7 +449,7 @@ a {
 footer {
 	display: flex;
 	height: 163px;
-	background-color: var(--secondary-bg-color);
+	background-color: #f2f2f2;
 }
 
 .footer-container {
@@ -475,9 +468,8 @@ footer {
 	gap: 15px;
 }
 
-// Laptop
-
-@media screen and (max-width: 1024px) {
+/* Laptop*/
+@media all and (max-width: 1024px) {
 	.logo-sm {
 		display: none;
 	}
@@ -533,9 +525,9 @@ footer {
 	}
 }
 
-// Tablet
+/* Tablet*/
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 	body {
 		padding: 0;
 	}
@@ -563,7 +555,7 @@ footer {
 	.header-link {
 		justify-content: center;
 		width: 100%;
-		border-bottom: 2px var(--secondary-bg-color) solid;
+		border-bottom: 2px #f2f2f2 solid;
 		border-top: 0;
 	}
 
@@ -572,7 +564,7 @@ footer {
 	}
 
 	.header-link:active {
-		border-bottom: 2px var(--main-color) solid;
+		border-bottom: 2px #0065fc solid;
 		border-top: 0;
 	}
 
@@ -583,11 +575,11 @@ footer {
 	}
 
 	.header-link-item:hover {
-		color: var(--base--color);
+		color: #000;
 	}
 
 	.header-link-item:active {
-		color: var(--main-color);
+		color: #0065fc;
 	}
 
 	.info-group {
@@ -596,7 +588,7 @@ footer {
 	}
 
 	.search-bar {
-		border: 1px solid var(--secondary-bg-color);
+		border: 1px solid #f2f2f2;
 		border-radius: 16px;
 	}
 
@@ -610,8 +602,8 @@ footer {
 
 	.search-bar-button {
 		width: 49px;
-		background: var(--Blue, #0065fc);
-		border: 1px solid var(--Blue, #0065fc);
+		background: #0065fc;
+		border: 1px solid #0065fc;
 		border-radius: 15px;
 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	}
@@ -625,7 +617,7 @@ footer {
 	}
 
 	.fa-magnifying-glass {
-		color: var(--main-bg-color);
+		color: #fff;
 	}
 
 	.filter-item-container {
@@ -635,7 +627,7 @@ footer {
 	}
 
 	.filter-item {
-		width: 150px;
+		width: 170px;
 	}
 
 	.filter-item label {
@@ -702,6 +694,7 @@ footer {
 	}
 
 	footer {
+		flex-direction: column;
 		height: 100%;
 		width: 100%;
 		padding: 0 30px;
@@ -712,9 +705,9 @@ footer {
 	}
 }
 
-// Smartphone
+/* Smartphone*/
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media all and (max-width: 426px) {
 	.main-container {
 		gap: 35px;
 	}
@@ -744,6 +737,7 @@ footer {
 
 	.filter-item {
 		margin-bottom: 10px;
+		width: 160px;
 	}
 
 	.info-bar p {
@@ -761,7 +755,7 @@ footer {
 
 	.accommodation-offers-container {
 		gap: 15px;
-		background-color: var(--main-bg-color);
+		background-color: #fff;
 	}
 
 	.accommodation-offers {
@@ -771,6 +765,7 @@ footer {
 
 	.accommodation-card {
 		flex: none;
+		width: 100%;
 	}
 
 	.sponsored-offers-container {
